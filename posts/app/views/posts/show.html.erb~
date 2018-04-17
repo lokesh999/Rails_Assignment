@@ -1,0 +1,12 @@
+<p>
+<strong> Body:</strong>
+<%= @post.body %>
+<p>
+
+<p>
+<strong> User_id: </strong>
+<%= @post.user_id %>
+</p>
+<%= link_to 'back',posts_path %>
+<%= link_to 'edit', edit_post_path %>
+<%= link_to 'delete',posts_path , method: :delete %>
