@@ -22,10 +22,10 @@ def create
  end
 def update 
   @post= Post.find(params[:id])
-  if @post.update(posts_param)
+  if @post.update(posts_p)
       redirect_to @post
    else 
-     render 'new'
+     render 'edit'
    end
 end
   def destroy
@@ -37,5 +37,8 @@ end
 private
  def posts_param
   params.require(:posts).permit(:body,:user_id)
+ end
+def posts_p
+   params.require(:post).permit(:body,:user_id)
  end
 end

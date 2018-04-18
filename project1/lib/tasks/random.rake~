@@ -1,0 +1,14 @@
+namespace :random do
+ task pro: :environment do
+   Post.find_each do |post|
+  # post.comment= Random.rand(101)
+#    puts "#{post.title} #{post.body} #{post.comment}" if post.comment==45
+          if post.comment > 97 do
+           puts "#{post.title} #{post.body} #{post.comment}" 
+           end
+      
+   
+   end
+  end
+end
+

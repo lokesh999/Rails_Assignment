@@ -5,8 +5,8 @@
 </p>
 
 <p>
-<%= form.label :user_id %><br>
-<%= form.number_field :user_id %>
+<%= form.label :userid %><br>
+<%= form.number_field :userid %>
 </p>
 <p>
 <%= form.submit %>
